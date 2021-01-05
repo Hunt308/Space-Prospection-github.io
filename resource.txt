@@ -1,0 +1,11 @@
+https://freewebsitetemplates.com/preview/space-science/index.html
+https://www.reddit.com/r/learnprogramming/comments/3ga8vj/why_is_css_so_hard_to_positionhow_to_align_easily/
+
+To do 
+-images of the logo
+-import fonts for projects 
+-make the nav bar the right color 
+-put replace text right position 
+-Featured video  
+-Featured projects 
+-bring background back 

@@ -1,0 +1,512 @@
+/* A website should be divided into 4 parts: setting the universal, the header, the body, and the footer. 
+You can use the IDs for keeping it limited to each of these areas and classes names or properies to change things in each area
+This keeps everything contained and select it with css
+
+The header is the navigation bar and logo next to it 
+
+The body is the main content 
+
+The footer is the content at the bottom and references
+
+*/ 
+
+/* NOTES: 
+-
+-make the code in the html more organized and easier to ead 
+-Start working on the body. 
+-In order to make a mobile verison of the site, you make a mobile.css file 
+/*To do the bottom simily put bottom:0; 
+
+/* Opacity: 0.1-0.9 simply puts opacity to the entire things. If you want 
+put have it differently on the text. You need to be more accuarate 
+/*z index allows for images to go front or behind whether it is negative or positve number */
+
+/* Start from the top to the bottom. Not randomly */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+
+
+ Putting the menu at the top 
+ul{
+    position: fixed;
+    top: 0;
+    left: 350px;
+    width: 100%;
+}
+
+
+
+body {
+	background: url("../images/bg-home.jpg") no-repeat scroll center top ;
+	margin: 0;
+	padding: 0;
+	max-width: auto;
+	z-index: 3;
+}
+*/
+
+img {
+    position: relative;
+    top: 0%;
+    right: 30px;
+    border: none;
+    padding: 0px 23px;
+    height: 65px;
+    z-index: -1;
+
+}
+
+
+body{
+    background-image: url(images/bg.jpg);
+}
+
+
+
+h3{
+    position: absolute;
+    top: 73.5%;
+    left: 21%;
+    font-family: 'Audiowide', cursive;
+    color: #A3A3A3;
+    padding: 17px 0px 40px 0px;
+    background: rgba(26, 25, 25, 0.5);
+    width: 940px;
+    display: flex;
+    font-size: 25px;
+    text-align: center;
+    justify-content: center;
+}
+
+
+.project-images{
+    margin: 0;
+    padding:0;
+    position: absolute;
+    top: 86%;
+    left: 21%;
+
+}
+
+.logo{
+    display: block;
+	float: left;
+	height: 60px;
+	margin: 0 44px 0 0;
+	padding: 0;
+    width: 304px;
+    cursor: pointer;
+}
+
+.active {
+    color: red;
+    background-color: black;
+    
+}
+
+.center{
+    display: flex;
+    justify-content: center;
+}
+
+
+ul {
+    font-family: Arial;
+    font-size: 18px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background: rgba(31, 41, 31, 0.6);
+}
+
+li{
+    float: left;
+}
+
+
+li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 22px 30px;
+    text-decoration: none;
+}
+
+.center li a:hover, .dropdown:hover .dropbtn{
+    background-color:#620031;
+    color: white;
+}
+
+li.dropdown{
+    display: inline-block;
+}
+
+.center .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a{
+    color: black;
+    padding: 12px 30px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {background-color: gray;}
+
+.dropdown:hover .dropdown-content{
+    display: block;
+}
+
+
+.edit-1 {
+    position: relative;
+    left: 165px;
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 55px;
+    font-family: 'Audiowide', cursive;
+    margin: 0;
+    margin-top: 180px;
+}
+
+.edit-2 {
+    position: relative;
+    left: 180px;
+    bottom: -16px;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 43px;
+    font-family: Arial;
+    font-weight: normal;
+}
+
+
+.satelliete-img {
+    margin: 0%;
+    padding: 0%;
+    position: relative;
+    bottom: 264px;
+    left: 320px;
+    width: 418px;
+    height: 484px;
+}
+
+.element{
+    margin: 0;
+    font-size: 18px Arial;
+    color: #A3A3A3;
+    background-color: black;
+    display: block;
+    position: relative;
+    top: 20%;
+    left: 56%;
+    text-decoration: none;
+    text-align: center;
+    padding: 12px 30px;
+}
+
+.element:hover{
+    color: white;
+    background-color: red;
+}
+
+.move{
+    position: absolute;
+    top: 57%;
+    left: 49%;
+}
+
+
+/* Fixed makes it stuck to the bottom and not able to make the page bigger */
+
+.red-web{ 
+    position: absolute;
+    top: 108%;
+    background-color: #620031;
+    color: white;
+    font-weight: normal;
+    font-size: 18px;
+    text-decoration: none;
+    font-family: arial;
+    text-align: center;
+    padding: 5px 5px;
+    width: 100%;
+    outline: none;
+}
+
+.red-web > h1 {
+    font-family: 'Audiowide', cursive;
+    font-size: 30px;
+}
+
+.red-web a{
+    color: white;
+}
+
+.red-web a:hover{
+    color: grey;
+}
+
+/* When you put a , comma it selects all h1 or other tags after the comma etc. 
+when there is no comma it selects tags only in the class or ID */
+
+.follow-us {
+    padding: 1.0em;
+    width: 100%;
+    background-color: #A3A3A3;
+    position: absolute;
+    top: 191%;
+
+}
+
+.follow-us > h1 {
+    font-family: 'Audiowide', cursive;
+    font-size: 25px;
+    color: white;
+    padding-left: 425px;
+
+}
+
+
+.logos{
+    margin: 0%;
+    padding: 0%;
+    position: absolute;
+    top: 192%;
+    left: 50%;
+}
+
+
+
+.logos:hover{
+    background-color:gray;
+}
+
+.logos-2{
+    margin: 0%;
+    padding: 0%;
+    position: absolute;
+    top: 192%;
+    left: 57.5%;
+}
+
+
+
+.logos-3{
+    margin: 0%;
+    padding: 0%;
+    position: absolute;
+    top: 192%;
+    left: 65%;
+
+}
+
+.logos-4{
+    margin: 0%;
+    padding: 0%;
+    position: absolute;
+    top: 192%;
+    left: 70%;
+
+}
+
+.video-page img{
+    color: white;
+    padding: 100px 600px 77px 520px;
+    background-color: black;
+    width: 100%;
+    
+
+    
+}
+
+.video-page{
+    background-color: black;
+    padding: 205px 600px;
+}
+
+.video-page > li > img{
+    width: 400px;
+    height: 258px;
+    position: absolute;
+    top: 131.6%;
+    right: 12%;
+}
+
+
+.video-page > li > .blog-title {
+    font-family: 'Audiowide', cursive;
+    color: white;
+    margin: 0%;
+    padding: 0%;
+    position: absolute;
+    top: 135%;
+    left: 52%;
+}
+
+
+.video-page > li > .FEATURED-VIDEO {
+    font-family: 'Audiowide', cursive;
+    color: white;
+    margin: 0%;
+    padding: 0%;
+    position: absolute;
+    top: 135%;
+    left: 22.5%;
+}
+
+
+
+.video-page > .PLANET > img {
+    margin-left: 33px;
+    padding: 0;
+    position: absolute;
+    top: 146%;
+    left: 50%;
+    width: 100px;
+    height: 90px;
+}
+
+
+.video-page > .PLANET > h1 {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 146%;
+    left: 60%;
+    font-size: 23px;
+    font-family: 'Audiowide', cursive;
+    color: grey;
+
+}
+
+.video-page > .PLANET > span {
+    color: white;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 151%;
+    left: 60%;
+    font-size: 14px;
+    font-family: arial;
+
+}
+
+.video-page > .PLANET > a {
+    padding: 0.5em 1.3em;
+    background-color: #3c0f38;
+    color: white;
+    position: absolute;
+    top: 154%;
+    left: 71.5%;
+    font-family: arial;
+    font-size: 14px;
+    
+
+}
+
+
+.video-page > .PLANET > a:hover {
+    background-color:#620031; 
+    
+}
+
+hr.line{
+    margin: 0;
+    padding: 0;
+    border: 0.5px solid grey;
+    position: absolute;
+    top: 163%;
+    left: 52.3%;
+    width: 27.5%;
+}
+
+.video-page > .SATELLITE > img{
+    margin-left: 33px;
+    padding: 0;
+    position: absolute;
+    top: 169%;
+    left: 50%;
+    width: 100px;
+    height: 90px;
+
+}
+
+.video-page > .SATELLITE > h1{
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 169%;
+    left: 60%;
+    font-size: 23px;
+    font-family: 'Audiowide', cursive;
+    color: grey;
+
+}
+
+.video-page > .SATELLITE > span{
+    color: white;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 174%;
+    left: 60%;
+    font-size: 14px;
+    font-family: arial;
+
+    
+}
+
+.video-page > .SATELLITE > a{
+    padding: 0.5em 1.3em;
+    background-color: #3c0f38;
+    color: white;
+    position: absolute;
+    top: 177%;
+    left: 71.5%;
+    font-family: arial;
+    font-size: 14px;
+    
+}
+
+
+.video-page > .SATELLITE > a:hover{
+    background-color: #620031;
+    
+}
+
+
+
+
+.footer{
+    position: absolute;
+    top: 210%;
+    background-color: white;
+    color: black;
+    width: 1531px;
+    height: 50px;
+    font-size: 12px;
+    font-family: arial;
+    line-height: 31px;
+    font-weight: normal;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+.footer > p{
+    text-transform: uppercase;
+}
